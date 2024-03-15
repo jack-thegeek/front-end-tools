@@ -1,0 +1,19 @@
+{
+  "name": "front-end-tools",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^4.0.8",
+    "astro": "^4.5.3",
+    "modern-normalize": "^2.0.0",
+    "sass": "^1.72.0",
+    "vue": "^3.4.21"
+  }
+}

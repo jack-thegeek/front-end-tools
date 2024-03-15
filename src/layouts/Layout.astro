@@ -1,0 +1,36 @@
+---
+import "/node_modules/modern-normalize/modern-normalize.css";
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style lang="scss" is:global>
+	:root {
+		--foregroundColor: #434343;
+		--space: in oklab;
+	}
+	body {
+		height: 100vh;
+		color: var(--foregroundColor);
+		-webkit-overflow-scrolling: touch;
+		-webkit-tap-highlight-color: transparent;
+		background: linear-gradient(61.74deg var(--space), rgba(207,219,255,1), rgba(255,0,0,0) 76.652%),linear-gradient(123.48deg var(--space), rgba(207,255,251,1), rgba(0,255,0,0) 76.652%),linear-gradient(185.22deg var(--space), rgba(207,227,255,1), rgba(0,0,255,0) 76.652%);
+	}
+</style>

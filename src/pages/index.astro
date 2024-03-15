@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+const menu = [
+	{
+		title: "最佳圆角",
+		href: "radius",
+	},
+];
+---
+
+<Layout title="Frontend Tools">
+	<div>
+		{menu.map((item) => <Card title={item.title} href={item.href} />)}
+	</div>
+</Layout>
+
+<style lang="scss"></style>
